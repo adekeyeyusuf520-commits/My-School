@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/jpeg" href="WhatsApp Image 2025-08-18 at 11.46.38 AM.jpg">
+    <title>Result Checker</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1b3a6b;
+        }
+
+        .checker-container {
+            width: 380px;
+            margin: 80px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1b3a6b;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #1b3a6b;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #2d6cdf;
+            box-sizing: border-box;
+        }
+
+        .check-btn {
+            width: 100%;
+            padding: 12px;
+            background: #ffd700;
+            color: #1b3a6b;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .check-btn:hover {
+            background: #2d6cdf;
+            color: white;
+        }
+        
+        .forgot {
+            text-align: center;
+            margin-top: 15px;
+            color:  #2d6cdf;
+        }
+        .forgot a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="checker-container">
+    <h2>Result Checker</h2>
+
+    <form action="">
+        <div class="form-group">
+            <label for="student"> Registration Number</label>
+            <input type="text" id="student" placeholder="Reg Number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="class">Exam / Class</label>
+            <select id="class" required>
+                <option value="">-- Select Class --</option>
+                <option>JSS 1</option>
+                <option>JSS 2</option>
+                <option>JSS 3</option>
+                <option>SS 1</option>
+                <option>SS 2</option>
+                <option>SS 3</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="term">Term</label>
+            <select id="term" required>
+                <option value="">-- Select Term --</option>
+                <option>First Term</option>
+                <option>Second Term</option>
+                <option>Third Term</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="session">Session</label>
+            <select id="session" required>
+                <option value="">-- Select Session --</option>
+                <option>2024/2025</option>
+                <option>2025/2026</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="pin">PIN / Card Number</label>
+            <input type="password" id="pin" placeholder="Enter PIN or Card Number" required>
+        </div>
+
+        <button type="submit" class="check-btn">Check Result</button>
+         <div class="forgot">
+            <a href="#">Purchase A Pin</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
